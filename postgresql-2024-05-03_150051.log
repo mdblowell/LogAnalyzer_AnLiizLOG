@@ -1,0 +1,142 @@
+2024-05-03 15:00:51.857 EDT [19244] LOG:  database system was shut down at 2024-05-03 14:59:17 EDT
+2024-05-03 15:05:51.864 EDT [19276] LOG:  checkpoint starting: time
+2024-05-03 15:05:51.900 EDT [19276] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.004 s, sync=0.005 s, total=0.037 s; sync files=2, longest=0.003 s, average=0.003 s; distance=0 kB, estimate=0 kB; lsn=0/1689220, redo lsn=0/16891E8
+2024-05-03 15:10:51.915 EDT [19276] LOG:  checkpoint starting: time
+2024-05-03 15:10:52.045 EDT [19276] LOG:  checkpoint complete: wrote 1 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.106 s, sync=0.004 s, total=0.131 s; sync files=1, longest=0.004 s, average=0.004 s; distance=4 kB, estimate=4 kB; lsn=0/168A240, redo lsn=0/168A208
+2024-05-03 15:17:47.319 EDT [16504] FATAL:  password authentication failed for user "postgres"
+2024-05-03 15:17:47.319 EDT [16504] DETAIL:  Connection matched file "C:/Program Files/PostgreSQL/16/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2024-05-03 15:20:42.699 EDT [19188] ERROR:  syntax error at or near "version" at character 25
+2024-05-03 15:20:42.699 EDT [19188] STATEMENT:  select version()
+	SELECT version()
+	SELECT version();
+2024-05-03 15:21:28.175 EDT [19188] ERROR:  column "current_database" does not exist at character 8
+2024-05-03 15:21:28.175 EDT [19188] STATEMENT:  select current_database;
+2024-05-03 15:21:41.893 EDT [19188] ERROR:  column "current_database" does not exist at character 8
+2024-05-03 15:21:41.893 EDT [19188] STATEMENT:  SELECT current_database;
+2024-05-03 15:22:45.480 EDT [1352] FATAL:  password authentication failed for user "postgres"
+2024-05-03 15:22:45.480 EDT [1352] DETAIL:  Connection matched file "C:/Program Files/PostgreSQL/16/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2024-05-03 15:25:51.055 EDT [19276] LOG:  checkpoint starting: time
+2024-05-03 15:27:38.947 EDT [19276] LOG:  checkpoint complete: wrote 984 buffers (6.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=107.248 s, sync=0.624 s, total=107.893 s; sync files=309, longest=0.013 s, average=0.003 s; distance=4577 kB, estimate=4577 kB; lsn=0/1B028D8, redo lsn=0/1B02868
+2024-05-03 15:34:17.592 EDT [10860] FATAL:  password authentication failed for user "postgres"
+2024-05-03 15:34:17.592 EDT [10860] DETAIL:  Connection matched file "C:/Program Files/PostgreSQL/16/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2024-05-03 15:35:18.471 EDT [2180] ERROR:  syntax error at or near "pg_restore" at character 1
+2024-05-03 15:35:18.471 EDT [2180] STATEMENT:  pg_restore -U postgres -d dvdrental c:
+	pg_restore -U postgres -d dvdrental "c:\Program Files\PostgreSQL\db_dumps\dvdrental.tar"
+	/l
+	use dvdrental;
+2024-05-03 15:35:25.344 EDT [2180] ERROR:  syntax error at or near "USE" at character 1
+2024-05-03 15:35:25.344 EDT [2180] STATEMENT:  USE dvdrental;
+2024-05-03 15:36:37.948 EDT [1600] ERROR:  syntax error at or near "exit" at character 1
+2024-05-03 15:36:37.948 EDT [1600] STATEMENT:  exit();
+2024-05-03 15:38:50.969 EDT [3208] FATAL:  password authentication failed for user "barco"
+2024-05-03 15:38:50.969 EDT [3208] DETAIL:  Role "barco" does not exist.
+	Connection matched file "C:/Program Files/PostgreSQL/16/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2024-05-03 15:39:00.306 EDT [19864] FATAL:  password authentication failed for user "barco"
+2024-05-03 15:39:00.306 EDT [19864] DETAIL:  Role "barco" does not exist.
+	Connection matched file "C:/Program Files/PostgreSQL/16/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2024-05-03 15:39:08.337 EDT [10720] FATAL:  password authentication failed for user "barco"
+2024-05-03 15:39:08.337 EDT [10720] DETAIL:  Role "barco" does not exist.
+	Connection matched file "C:/Program Files/PostgreSQL/16/data/pg_hba.conf" line 117: "host    all             all             ::1/128                 scram-sha-256"
+2024-05-03 15:40:51.994 EDT [19276] LOG:  checkpoint starting: time
+2024-05-03 15:42:01.778 EDT [19276] LOG:  checkpoint complete: wrote 636 buffers (3.9%); 0 WAL file(s) added, 0 removed, 1 recycled; write=69.435 s, sync=0.317 s, total=69.784 s; sync files=152, longest=0.009 s, average=0.003 s; distance=5672 kB, estimate=5672 kB; lsn=0/208CAC8, redo lsn=0/208CA90
+2024-05-03 20:17:44.695 EDT [18636] ERROR:  relation "catalogs" does not exist at character 15
+2024-05-03 20:17:44.695 EDT [18636] STATEMENT:  select * from Catalogs;
+2024-05-03 20:18:34.521 EDT [18636] ERROR:  relation "pg_catalog.table" does not exist at character 15
+2024-05-03 20:18:34.521 EDT [18636] STATEMENT:  select * from pg_catalog.table;
+2024-05-03 20:19:56.579 EDT [13872] ERROR:  column "none" does not exist at character 588
+2024-05-03 20:19:56.579 EDT [13872] STATEMENT:  SELECT rel.oid, rel.relname AS name, rel.reltablespace AS spcoid,rel.relacl AS relacl_str,
+	  (CASE WHEN length(spc.spcname::text) > 0 OR rel.relkind = 'p' THEN spc.spcname ELSE
+	    (SELECT sp.spcname FROM pg_catalog.pg_database dtb
+	    JOIN pg_catalog.pg_tablespace sp ON dtb.dattablespace=sp.oid
+	    WHERE dtb.oid = 5::oid)
+	  END) as spcname,
+	  (CASE rel.relreplident
+	          WHEN 'd' THEN 'default'
+	          WHEN 'n' THEN 'nothing'
+	          WHEN 'f' THEN 'full'
+	          WHEN 'i' THEN 'index'
+	  END) as replica_identity,
+	  (select nspname FROM pg_catalog.pg_namespace WHERE oid = None::oid ) as schema,
+	  pg_catalog.pg_get_userbyid(rel.relowner) AS relowner, rel.relkind,
+	  (CASE WHEN rel.relkind = 'p' THEN true ELSE false END) AS is_partitioned,
+	  rel.relhassubclass, rel.reltuples::bigint, des.description, con.conname, con.conkey,
+		EXISTS(select 1 FROM pg_catalog.pg_trigger
+				JOIN pg_catalog.pg_proc pt ON pt.oid=tgfoid AND pt.proname='logtrigger'
+				JOIN pg_catalog.pg_proc pc ON pc.pronamespace=pt.pronamespace AND pc.proname='slonyversion'
+				WHERE tgrelid=rel.oid) AS isrepl,
+		(SELECT count(*) FROM pg_catalog.pg_trigger WHERE tgrelid=rel.oid AND tgisinternal = FALSE) AS triggercount,
+		(SELECT ARRAY(SELECT CASE WHEN (nspname NOT LIKE 'pg\_%') THEN
+	            pg_catalog.quote_ident(nspname)||'.'||pg_catalog.quote_ident(c.relname)
+	            ELSE pg_catalog.quote_ident(c.relname) END AS inherited_tables
+	    FROM pg_catalog.pg_inherits i
+	    JOIN pg_catalog.pg_class c ON c.oid = i.inhparent
+	    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+	    WHERE i.inhrelid = rel.oid ORDER BY inhseqno)) AS coll_inherits,
+	  (SELECT count(*)
+			FROM pg_catalog.pg_inherits i
+	      JOIN pg_catalog.pg_class c ON c.oid = i.inhparent
+	      JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+			WHERE i.inhrelid = rel.oid) AS inherited_tables_cnt,
+		(CASE WHEN rel.relpersistence = 'u' THEN true ELSE false END) AS relpersistence,
+		(SELECT st.setting from pg_catalog.pg_settings st WHERE st.name = 'default_table_access_method') as default_amname,
+		substring(pg_catalog.array_to_string(rel.reloptions, ',') FROM 'fillfactor=([0-9]*)') AS fillfactor,
+		substring(pg_catalog.array_to_string(rel.reloptions, ',') FROM 'parallel_workers=([0-9]*)') AS parallel_workers,
+		substring(pg_catalog.array_to_string(rel.reloptions, ',') FROM 'toast_tuple_target=([0-9]*)') AS toast_tuple_target,
+		(substring(pg_catalog.array_to_string(rel.reloptions, ',') FROM 'autovacuum_enabled=([a-z|0-9]*)'))::BOOL AS autovacuum_enabled,
+		substring(pg_catalog.array_to_string(rel.reloptions, ',') FROM 'autovacuum_vacuum_threshold=([0-9]*)') AS autovacuum_vacuum_threshold,
+		substring(pg_catalog.array_to_string(rel.reloptions, ',') FROM 'autovacuum_vacuum_scale_factor=([0-9]*[.]?[0-9]*)') AS autovacuum_vacuum_scale_factor,
+		substring(pg_catalog.array_to_string(rel.reloptions, ',') FROM 'autovacuum_analyze_threshold=([0-9]*)') AS autovacuum_analyze_threshold,
+		substring(pg_catalog.array_to_string(rel.reloptions, ',') FROM 'autovacuum_analyze_scale_factor=([0-9]*[.]?[0-9]*)') AS autovacuum_analyze_scale_factor,
+		substring(pg_catalog.array_to_string(rel.reloptions, ',') FROM 'autovacuum_vacuum_cost_delay=([0-9]*)') AS autovacuum_vacuum_cost_delay,
+		substring(pg_catalog.array_to_string(rel.reloptions, ',') FROM 'autovacuum_vacuum_cost_limit=([0-9]*)') AS autovacuum_vacuum_cost_limit,
+		substring(pg_catalog.array_to_string(rel.reloptions, ',') FROM 'autovacuum_freeze_min_age=([0-9]*)') AS autovacuum_freeze_min_age,
+		substring(pg_catalog.array_to_string(rel.reloptions, ',') FROM 'autovacuum_freeze_max_age=([0-9]*)') AS autovacuum_freeze_max_age,
+		substring(pg_catalog.array_to_string(rel.reloptions, ',') FROM 'autovacuum_freeze_table_age=([0-9]*)') AS autovacuum_freeze_table_age,
+		(substring(pg_catalog.array_to_string(tst.reloptions, ',') FROM 'autovacuum_enabled=([a-z|0-9]*)'))::BOOL AS toast_autovacuum_enabled,
+		substring(pg_catalog.array_to_string(tst.reloptions, ',') FROM 'autovacuum_vacuum_threshold=([0-9]*)') AS toast_autovacuum_vacuum_threshold,
+		substring(pg_catalog.array_to_string(tst.reloptions, ',') FROM 'autovacuum_vacuum_scale_factor=([0-9]*[.]?[0-9]*)') AS toast_autovacuum_vacuum_scale_factor,
+		substring(pg_catalog.array_to_string(tst.reloptions, ',') FROM 'autovacuum_analyze_threshold=([0-9]*)') AS toast_autovacuum_analyze_threshold,
+		substring(pg_catalog.array_to_string(tst.reloptions, ',') FROM 'autovacuum_analyze_scale_factor=([0-9]*[.]?[0-9]*)') AS toast_autovacuum_analyze_scale_factor,
+		substring(pg_catalog.array_to_string(tst.reloptions, ',') FROM 'autovacuum_vacuum_cost_delay=([0-9]*)') AS toast_autovacuum_vacuum_cost_delay,
+		substring(pg_catalog.array_to_string(tst.reloptions, ',') FROM 'autovacuum_vacuum_cost_limit=([0-9]*)') AS toast_autovacuum_vacuum_cost_limit,
+		substring(pg_catalog.array_to_string(tst.reloptions, ',') FROM 'autovacuum_freeze_min_age=([0-9]*)') AS toast_autovacuum_freeze_min_age,
+		substring(pg_catalog.array_to_string(tst.reloptions, ',') FROM 'autovacuum_freeze_max_age=([0-9]*)') AS toast_autovacuum_freeze_max_age,
+		substring(pg_catalog.array_to_string(tst.reloptions, ',') FROM 'autovacuum_freeze_table_age=([0-9]*)') AS toast_autovacuum_freeze_table_age,
+		rel.reloptions AS reloptions, tst.reloptions AS toast_reloptions, rel.reloftype, am.amname,
+		CASE WHEN typ.typname IS NOT NULL THEN (select pg_catalog.quote_ident(nspname) FROM pg_catalog.pg_namespace WHERE oid = None::oid )||'.'||pg_catalog.quote_ident(typ.typname) ELSE typ.typname END AS typname,
+		typ.typrelid AS typoid, rel.relrowsecurity as rlspolicy, rel.relforcerowsecurity as forcerlspolicy,
+		(CASE WHEN rel.reltoastrelid = 0 THEN false ELSE true END) AS hastoasttable,
+		(SELECT pg_catalog.array_agg(provider || '=' || label) FROM pg_catalog.pg_seclabels sl1 WHERE sl1.objoid=rel.oid AND sl1.objsubid=0) AS seclabels,
+		(CASE WHEN rel.oid <= 16383::oid THEN true ElSE false END) AS is_sys_table
+		-- Added for partition table
+	    , (CASE WHEN rel.relkind = 'p' THEN pg_catalog.pg_get_partkeydef(2601::oid) ELSE '' END) AS partition_scheme FROM pg_catalog.pg_class rel
+	  LEFT OUTER JOIN pg_catalog.pg_tablespace spc on spc.oid=rel.reltablespace
+	  LEFT OUTER JOIN pg_catalog.pg_description des ON (des.objoid=rel.oid AND des.objsubid=0 AND des.classoid='pg_class'::regclass)
+	  LEFT OUTER JOIN pg_catalog.pg_constraint con ON con.conrelid=rel.oid AND con.contype='p'
+	  LEFT OUTER JOIN pg_catalog.pg_class tst ON tst.oid = rel.reltoastrelid
+	  LEFT JOIN pg_catalog.pg_type typ ON rel.reloftype=typ.oid
+	  LEFT OUTER JOIN pg_catalog.pg_am am ON am.oid = rel.relam
+	WHERE rel.relkind IN ('r','s','t','p') AND rel.relnamespace = None::oid
+	AND NOT rel.relispartition
+	  AND rel.oid = 2601::oid ORDER BY rel.relname;
+2024-05-03 20:20:09.623 EDT [19276] LOG:  checkpoint starting: time
+2024-05-03 20:20:11.296 EDT [19276] LOG:  checkpoint complete: wrote 15 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.616 s, sync=0.029 s, total=1.674 s; sync files=9, longest=0.012 s, average=0.004 s; distance=32 kB, estimate=5108 kB; lsn=0/2094E68, redo lsn=0/2094E30
+2024-05-03 20:21:30.183 EDT [18636] ERROR:  relation "tables" does not exist at character 15
+2024-05-03 20:21:30.183 EDT [18636] STATEMENT:  select * from tables;
+2024-05-03 20:21:44.199 EDT [18636] ERROR:  syntax error at or near "." at character 30
+2024-05-03 20:21:44.199 EDT [18636] STATEMENT:  select * from Catalog Objects.tables;
+2024-05-03 20:21:51.994 EDT [18636] ERROR:  syntax error at or near ".." at character 30
+2024-05-03 20:21:51.994 EDT [18636] STATEMENT:  select * from Catalog Objects..tables;
+2024-05-03 20:25:09.307 EDT [19276] LOG:  checkpoint starting: time
+2024-05-03 20:25:10.326 EDT [19276] LOG:  checkpoint complete: wrote 9 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.972 s, sync=0.021 s, total=1.019 s; sync files=7, longest=0.005 s, average=0.003 s; distance=8 kB, estimate=4598 kB; lsn=0/2096F30, redo lsn=0/2096EF8
+2024-05-03 21:50:06.526 EDT [13872] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2024-05-03 21:50:06.527 EDT [18708] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2024-05-03 21:50:06.527 EDT [18636] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2024-05-03 21:50:06.546 EDT [11824] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2024-05-03 21:50:32.640 EDT [19276] LOG:  shutting down
+2024-05-03 21:50:32.643 EDT [19276] LOG:  checkpoint starting: shutdown immediate
+2024-05-03 21:50:32.663 EDT [19276] LOG:  checkpoint complete: wrote 0 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.002 s, sync=0.001 s, total=0.022 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=4138 kB; lsn=0/2096FE0, redo lsn=0/2096FE0
