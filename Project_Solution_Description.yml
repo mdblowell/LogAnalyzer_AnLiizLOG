@@ -1,0 +1,97 @@
+Data Science & Analytics Project Definition (Template):
+
+Updated: 2024.5.16
+
+Project Name: AnLiizLOG - Parsing, Analyzing and Reporting of log files using AI deep learning (Python).
+
+Project and Work Product Description:
+	
+	Monitoring of hardware and software application logs is a critical practice in order to improve the quality and health of the environment. Every application (hardware or software) produces a log that tracks activities (events). These logs need to be provided to the Technical Support Representative in order to troubleshoot any errors, failures, performance issues or other concern.  The log analyzer tool (AnLiizLOG) is purposed to assist (in the scope of) a Software Technical Support Representative. And will contribute to the support representive's ability to find, document, match the discovered (problem) events to existing known KBA (knowledgebase) or define and document a new KBA. This will accelerate the process of offering a solution to the end user (customer).  This tool will scan the given log file(s) for pre-defined types of warnings, errors, and severity messages that are pertinent to the application profile (performance of: operating system, storage management system, network, security, and, deployed software applications). In a future release, the customer will be able to load the log file to be analyzed and use regular expression (a sequence of characters that specifies a match pattern in text) and in return receive applicable KBAs (knowlegebase articles) that match. Thus, a self-serve mode that will offer a matching KBA having a cited bug, workaround, or solution.
+
+Description of Solution:  (should be CONCISE, 3-7 sentences)
+	
+	create a log analyzer from scratch (python create/use Faker to generate log files and use Regex to parse the log files, and parse out specific things (severity of warnings)
+	 - match patterns...
+ 
+flowchart 
+    A[Customer Reports Issue] --> B[TSR Requests Logs]
+    B --> C[Customer Provides Logs]
+    C --> D[AnLiizLOG Analyzes Logs]
+    D --> E[AnLiizLOG Reports Findings]
+    E --> F[TSR Reviews Report]
+    F --> G{Existing Solution Found?}
+    G -->|Yes| H[TSR Provides Solution]
+    G -->|No| I[Create New KBA]
+    I --> H
+
+ 
+ 
+Solution Design (high-level):
+
+   Customer Reports Issue
+   Technical Support Representative (TSR) Requests Logs
+   Customer Provides Logs
+    AnLiizLOG Analyzes Logs
+    AnLiizLOG Reports Findings
+    TSR Reviews Report
+    Existing Solution Found?
+    Yes -- TSR Provides Solution
+    No -- TSR Create New KBA
+
+Solution Code Description (low-level design): 
+	
+	Start
+|
+|-> Import necessary libraries (os, re, tkinter, datetime, getpass)
+|
+|-> Define function: analyze_log_file(file_path, keywords)
+|   |
+|   |-> Read the content of the log file
+|   |-> Search for keywords in the log file content using regular expressions
+|   |-> Return findings dictionary containing matches for each keyword
+|
+|-> Define function: generate_report(findings)
+|   |
+|   |-> Generate a report string summarizing the findings for each keyword
+|   |-> Return the report
+|
+|-> Define function: generate_kba_draft(findings, application_name, application_version, product_name)
+|   |
+|   |-> Ask user if they want to create a KBA draft
+|   |-> If yes,
+|   |    |-> Generate a draft for each keyword with relevant information
+|   |    |-> Save the draft to a text file in a specific directory
+|
+|-> Define function: upload_files()
+|   |
+|   |-> Create a tkinter file dialog to upload log files
+|   |-> Return selected file paths
+|
+|-> Define main function
+|   |
+|   |-> Get application name, version, and product name (TODO)
+|   |-> Upload log files using upload_files()
+|   |-> Define keywords to search for and ignore
+|   |-> For each uploaded file:
+|       |-> Analyze the log file using analyze_log_file()
+|       |-> Generate and print a report using generate_report()
+|       |-> Generate KBA drafts using generate_kba_draft()
+|
+End
+
+
+Actual Working Product Code: 
+    import os, re, tkinter as tk, from tkinter import filedialog, from datetime import datetime, getpass
+    
+Application Instructions:
+
+    • Step-by-step instructions for OTHERS:
+	  
+        import os, re, tkinter as tk, from tkinter import filedialog, from datetime import datetime, getpass
+		obtain (database) log files for analysis (*.txt, *.log, *.json)
+        python AnLiizLOG_v2.py
+		select (browse/navigate) log files to be analyzed
+		   note: files cannot be larger than 500MB in size and maximum of 3 files to be analyzed.
+		prompted to add in other keywords to search for in the log files.
+		prompted to add in keywords to ignore during the search in the log files.
+		prompted if you want the tool to create a KBA from a default (simple) template
